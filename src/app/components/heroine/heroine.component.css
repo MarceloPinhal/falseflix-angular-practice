@@ -1,0 +1,53 @@
+.top-movie__image {
+  width: 100%;
+  height: 550px;
+}
+
+.top-movie__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.background-gradient {
+  width: 99%;
+  height: 550px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: absolute;
+}
+
+.movie-description__container {
+  position: absolute;
+  top: 20%;
+  margin-left: 10px;
+}
+
+.movie-description__container h1 {
+  font-weight: bold;
+}
+.movie-description_btn1 {
+  padding: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.movie-description_btn2 {
+  padding: 15px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 1px solid white;
+  margin-left: 10px;
+}
+
+.release {
+  margin-top: 10px;
+  color: gray;
+}
+
+.overview {
+  margin-top: 10px;
+}

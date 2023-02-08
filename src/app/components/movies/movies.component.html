@@ -1,0 +1,77 @@
+<div class="movies-genres__container">
+<h3>Top Rated Movies</h3>
+
+<div class="movies-slider">
+
+  <div class="btn-left__container">
+    <span
+      (click)="slideLeft($event.target)"
+      class="btn-left"
+      class="material-icons-round"
+      >arrow_circle_left</span
+    >
+  </div>
+
+  <div *ngFor="let movie of topRatedMovies" class="movies-card">
+    <div class="movie-img__container">
+      <img
+        src="https://image.tmdb.org/t/p/w500{{ movie.backdrop_path }}"
+        alt="{{ movie.title }}"
+      />
+    </div>
+    <div class="hover-elements">
+    <p>{{movie.title}}</p>
+    <p>⭐{{movie.vote_average}}  </p>
+    </div>
+  </div>
+
+  <div class="btn-right__container">
+    <span
+      (click)="slideRight($event.target)"
+      class="material-icons-round second-button"
+      >arrow_circle_right</span
+    >
+  </div>
+
+</div>
+</div>
+
+<!-- Upcoming Movies -->
+
+<div class="movies-genres__container">
+  <h3>Upcoming</h3>
+  
+  <div class="movies-slider">
+  
+    <div class="btn-left__container">
+      <span
+        (click)="slideLeft($event.target)"
+        class="btn-left"
+        class="material-icons-round"
+        >arrow_circle_left</span
+      >
+    </div>
+  
+    <div *ngFor="let movie of upcomingMovies" class="movies-card">
+      <div class="movie-img__container" *ngIf="movie.backdrop_path">
+        <img
+          src="https://image.tmdb.org/t/p/w500{{ movie.backdrop_path }}"
+          alt="{{ movie.title }}"
+        />
+      </div>
+      <div class="hover-elements">
+      <p>{{movie.title}}</p>
+      <p>⭐{{movie.vote_average}}  </p>
+      </div>
+    </div>
+  
+    <div class="btn-right__container">
+      <span
+        (click)="slideRight($event.target)"
+        class="material-icons-round second-button"
+        >arrow_circle_right</span
+      >
+    </div>
+  
+  </div>
+  </div>

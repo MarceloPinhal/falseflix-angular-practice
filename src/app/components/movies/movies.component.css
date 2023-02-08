@@ -1,0 +1,45 @@
+@import '~material-icons/iconfont/material-icons.css';
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.movies-slider {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+} 
+
+
+.movies-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.movies-card {
+    cursor: pointer;
+}
+
+.material-icons-round {
+    position: absolute;
+    font-size: 70px;
+    opacity: 0.5;
+    cursor: pointer;
+   
+}
+
+.material-icons-round:hover {
+    opacity: 1;
+}
+
+.second-button{
+    right: 0;
+}
+
+.movie-img__container:hover{
+    opacity: 0.3;
+}
+
+.hover-elements{
+text-align: center;
+ 
+} 
+

@@ -1,0 +1,16 @@
+.nav-bar__container {
+    display: flex; 
+    margin-top: 0px; 
+    /* position: absolute; */
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-element {
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+}

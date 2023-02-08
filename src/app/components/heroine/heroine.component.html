@@ -1,0 +1,17 @@
+<div *ngFor="let movie of topRatedMovies; let index= index"  class="top-movie__card">
+  <div class="background-gradient"></div>
+  <div  class="top-movie__image">
+  <img src=
+  "https://image.tmdb.org/t/p/original{{movie.backdrop_path}}" 
+  alt="{{movie.title}}"
+  > 
+</div> 
+<div class="movie-description__container">
+<h1>{{movie.title}}</h1>
+<button class="movie-description_btn1">Play</button>
+<button class="movie-description_btn2">Watch Later</button>
+<p class="release">Released: {{movie.release_date}}</p>
+<p class="overview">{{movie.overview}}</p>
+</div>
+</div>
+
